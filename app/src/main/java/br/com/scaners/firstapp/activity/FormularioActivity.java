@@ -1,4 +1,4 @@
-package br.com.scaners.firstapp;
+package br.com.scaners.firstapp.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -20,18 +20,20 @@ import android.widget.Toast;
 
 import java.io.File;
 
+import br.com.scaners.firstapp.util.FormularioUtil;
+import br.com.scaners.firstapp.R;
 import br.com.scaners.firstapp.dao.AlunoDao;
 import br.com.scaners.firstapp.modelo.Aluno;
 
 public class FormularioActivity extends AppCompatActivity {
     public static final int INTENT_CAMERA = 1;
-    private FormularioHelper formularioHelper;
+    private FormularioUtil formularioHelper;
     private String caminhoFoto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
-        formularioHelper = new FormularioHelper(this);
+        formularioHelper = new FormularioUtil(this);
         Intent intent = getIntent();
         Aluno aluno = (Aluno) intent.getSerializableExtra("aluno");
         if (aluno != null){

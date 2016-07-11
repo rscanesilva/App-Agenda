@@ -1,15 +1,16 @@
-package br.com.scaners.firstapp;
+package br.com.scaners.firstapp.util;
 
-import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 import android.widget.RatingBar;
 
+import br.com.scaners.firstapp.R;
+import br.com.scaners.firstapp.activity.FormularioActivity;
 import br.com.scaners.firstapp.modelo.Aluno;
 
 /**
  * Created by Scaners on 09/07/2016.
  */
-public class FormularioHelper {
+public class FormularioUtil {
 
     private Aluno aluno;
     private EditText campoNome;
@@ -18,7 +19,7 @@ public class FormularioHelper {
     private EditText campoSite;
     private RatingBar campoNota;
 
-    public FormularioHelper(FormularioActivity activity) {
+    public FormularioUtil(FormularioActivity activity) {
        campoNome = (EditText) activity.findViewById(R.id.formulario_nome);
        campoEndereco = (EditText) activity.findViewById(R.id.formulario_endereco);
        campoTelefone = (EditText) activity.findViewById(R.id.formulario_telefone);

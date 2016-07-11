@@ -1,4 +1,4 @@
-package br.com.scaners.firstapp;
+package br.com.scaners.firstapp.activity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import br.com.scaners.firstapp.R;
 import br.com.scaners.firstapp.dao.AlunoDao;
 import br.com.scaners.firstapp.modelo.Aluno;
 
