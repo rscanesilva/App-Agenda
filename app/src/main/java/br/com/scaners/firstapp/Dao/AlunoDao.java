@@ -1,4 +1,4 @@
-package br.com.scaners.firstapp.Dao;
+package br.com.scaners.firstapp.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.NonNull;
-import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

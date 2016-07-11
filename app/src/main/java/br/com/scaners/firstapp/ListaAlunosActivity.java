@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.provider.Browser;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,10 +16,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.io.Serializable;
 import java.util.List;
 
-import br.com.scaners.firstapp.Dao.AlunoDao;
+import br.com.scaners.firstapp.dao.AlunoDao;
 import br.com.scaners.firstapp.modelo.Aluno;
 
 public class ListaAlunosActivity extends AppCompatActivity {

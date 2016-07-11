@@ -7,7 +7,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
-import android.os.SystemClock;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,9 +19,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
-import java.io.Serializable;
 
-import br.com.scaners.firstapp.Dao.AlunoDao;
+import br.com.scaners.firstapp.dao.AlunoDao;
 import br.com.scaners.firstapp.modelo.Aluno;
 
 public class FormularioActivity extends AppCompatActivity {
