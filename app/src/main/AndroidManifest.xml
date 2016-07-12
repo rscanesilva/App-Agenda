@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.ListaAlunosActivity"
+            android:name="ListaAlunosActivity"
             android:label="Agenda">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.FormularioActivity"
+            android:name="FormularioActivity"
             android:label="Formulário">
         </activity>
     </application>

@@ -3,7 +3,7 @@ package br.com.scaners.firstapp.modelo;
 import java.io.Serializable;
 
 /**
- * Created by Scaners on 09/07/2016.
+ * Created by alura on 12/08/15.
  */
 public class Aluno implements Serializable {
     private Long id;
@@ -12,6 +12,15 @@ public class Aluno implements Serializable {
     private String telefone;
     private String site;
     private Double nota;
+    private String caminhoFoto;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;
@@ -53,12 +62,16 @@ public class Aluno implements Serializable {
         this.nota = nota;
     }
 
-    public Long getId() { return id; }
+    public String getCaminhoFoto() {
+        return caminhoFoto;
+    }
 
-    public void setId(Long id) { this.id = id; }
+    public void setCaminhoFoto(String caminhoFoto) {
+        this.caminhoFoto = caminhoFoto;
+    }
 
     @Override
     public String toString() {
-        return this.getId() +" - "+ this.getNome();
+        return getId() + " - " + getNome();
     }
 }
